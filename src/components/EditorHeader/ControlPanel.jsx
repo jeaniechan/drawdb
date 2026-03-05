@@ -1728,6 +1728,8 @@ export default function ControlPanel({ title, setTitle, lastSaved }) {
           <Divider layout="vertical" margin="8px" />
           <Tooltip content={t("add_table")} position="bottom">
             <button
+              data-testid="toolbar-add-table"
+              aria-label={t("add_table")}
               className="flex items-center py-1 px-2 hover-2 rounded-sm disabled:opacity-50"
               onClick={() => addTable()}
               disabled={layout.readOnly}
@@ -1737,6 +1739,8 @@ export default function ControlPanel({ title, setTitle, lastSaved }) {
           </Tooltip>
           <Tooltip content={t("add_area")} position="bottom">
             <button
+              data-testid="toolbar-add-area"
+              aria-label={t("add_area")}
               className="py-1 px-2 hover-2 rounded-sm flex items-center disabled:opacity-50"
               onClick={() => addArea()}
               disabled={layout.readOnly}
@@ -1746,6 +1750,8 @@ export default function ControlPanel({ title, setTitle, lastSaved }) {
           </Tooltip>
           <Tooltip content={t("add_note")} position="bottom">
             <button
+              data-testid="toolbar-add-note"
+              aria-label={t("add_note")}
               className="py-1 px-2 hover-2 rounded-sm flex items-center disabled:opacity-50"
               onClick={() => addNote()}
               disabled={layout.readOnly}
